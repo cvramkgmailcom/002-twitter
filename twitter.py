@@ -59,7 +59,7 @@ if text_input:
     search_input = str(search_key_word) + ' since:' +str(since)+ ' until:' + str(until)
 
     for i,tweet in enumerate(sntwitter.TwitterSearchScraper(search_input).get_items()):
-        if i>50:
+        if i>999:
             break
         t_data=t_data.append({'date':tweet.date,
         'id':tweet.id,
